@@ -1,0 +1,76 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+desktop.ini
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+pubspec.lock
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Keystores
+*.keystore
+*.jks
+key.properties
+
+# Environment variables & secrets
+.env
+.env.*
+
+# Firebase / Google Services config (contains API keys)
+google-services.json
+GoogleService-Info.plist
+
+# Google OAuth client secrets
+client_secret_*.json
+
+# Supabase credentials (real keys — use placeholder file in repo)
+lib/src/services/supabase/supabase_options.dart
+
+# Firebase credentials (real keys — use placeholder file in repo)
+lib/src/services/firebase/firebase_options.dart
+
+# Android local properties (SDK paths)
+android/local.properties
+
+# Gemini / AI assistant
+.gemini/
