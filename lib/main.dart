@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'src/core/router/app_router.dart';
 import 'src/core/theme/app_theme.dart';
-
 import 'package:firebase_core/firebase_core.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'src/services/local/hive_service.dart';
-import 'src/services/supabase/supabase_options_placeholder.dart';
+import 'src/services/supabase/supabase_options.dart';
 
 void main() async {
   try {
@@ -18,8 +17,8 @@ void main() async {
     
     print('Starting Supabase initialization...');
     await Supabase.initialize(
-      url: SupabaseOptionsPlaceholder.url,
-      anonKey: SupabaseOptionsPlaceholder.anonKey,
+      url: SupabaseOptions.url,
+      anonKey: SupabaseOptions.anonKey,
     );
 
     print('Starting App...');
